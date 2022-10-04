@@ -1,0 +1,49 @@
+https://kawahedukasibackend.herokuapp.com/
+
+METHOD: GET, URL ('/') WELCOME
+
+METHOD: POST, URL ('/login')
+  request body : {
+    username: 'haha',
+    passwword: 'haha',
+  }
+
+METHOD: GET, URL ('/content/data/:username')
+  request params: username
+
+METHOD: POST, URL ('content/create')
+  request header: {
+    access_token: 'ionjdasl;kndksa',
+  }
+  request body: {
+    name: 'haha', ( MANDATORY )
+    image: 'haha',
+    description1: 'haha',
+    description2: 'haha',
+    description3: 'haha',
+    description4: 'haha',
+    description5: 'haha',
+    description6: 'haha',
+  }
+
+METHOD: PUT, URL ('content/update/:id')
+  request params: id (content)
+  request header: {
+    access_token: 'ionjdasl;kndksa',
+  }
+  request body: {
+    name: 'haha', ( MANDATORY )
+    image: 'haha',
+    description1: 'haha',
+    description2: 'haha',
+    description3: 'haha',
+    description4: 'haha',
+    description5: 'haha',
+    description6: 'haha',
+  }
+
+METHOD: DELETE, URL ('/content/delete/:id')
+  request params: id (content)
+  request header: {
+    access_token: 'ionjdasl;kndksa',
+  }

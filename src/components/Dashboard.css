@@ -1,0 +1,174 @@
+/*--------------------------------------------------------------
+# Dashboard
+--------------------------------------------------------------*/
+/* Filter dropdown */
+.niceadmin .dashboard .filter {
+  position: absolute;
+  right: 0px;
+  top: 15px;
+}
+.niceadmin .dashboard .filter .icon {
+  color: #aab7cf;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  transition: 0.3s;
+  font-size: 16px;
+}
+.niceadmin .dashboard .filter .icon:hover, .dashboard .filter .icon:focus {
+  color: #4154f1;
+}
+.niceadmin .dashboard .filter .dropdown-header {
+  padding: 8px 15px;
+}
+.niceadmin .dashboard .filter .dropdown-header h6 {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #aab7cf;
+  margin-bottom: 0;
+  padding: 0;
+}
+.niceadmin .dashboard .filter .dropdown-item {
+  padding: 8px 15px;
+}
+
+/* Info Cards */
+.niceadmin .dashboard .info-card {
+  padding-bottom: 10px;
+}
+.niceadmin .dashboard .info-card h6 {
+  font-size: 28px;
+  color: #012970;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+.niceadmin .dashboard .card-icon {
+  font-size: 32px;
+  line-height: 0;
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+.niceadmin .dashboard .sales-card .card-icon {
+  color: #4154f1;
+  background: #f6f6fe;
+}
+.niceadmin .dashboard .revenue-card .card-icon {
+  color: #2eca6a;
+  background: #e0f8e9;
+}
+.niceadmin .dashboard .customers-card .card-icon {
+  color: #ff771d;
+  background: #ffecdf;
+}
+.niceadmin .dashboard .yellow-card .card-icon {
+  color: #ff771d;
+  background: #eef0b0;
+}
+
+/* Activity */
+.niceadmin .dashboard .activity {
+  font-size: 14px;
+}
+.niceadmin .dashboard .activity .activity-item .activite-label {
+  color: #888;
+  position: relative;
+  flex-shrink: 0;
+  flex-grow: 0;
+  min-width: 64px;
+}
+.niceadmin .dashboard .activity .activity-item .activite-label::before {
+  content: "";
+  position: absolute;
+  right: -11px;
+  width: 4px;
+  top: 0;
+  bottom: 0;
+  background-color: #eceefe;
+}
+.niceadmin .dashboard .activity .activity-item .activity-badge {
+  margin-top: 3px;
+  z-index: 1;
+  font-size: 11px;
+  line-height: 0;
+  border-radius: 50%;
+  flex-shrink: 0;
+  border: 3px solid #fff;
+  flex-grow: 0;
+}
+.niceadmin .dashboard .activity .activity-item .activity-content {
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+.niceadmin .dashboard .activity .activity-item:first-child .activite-label::before {
+  top: 5px;
+}
+.niceadmin .dashboard .activity .activity-item:last-child .activity-content {
+  padding-bottom: 0;
+}
+
+/* News & Updates */
+.niceadmin .dashboard .news .post-item + .post-item {
+  margin-top: 15px;
+}
+.niceadmin .dashboard .news img {
+  width: 80px;
+  float: left;
+  border-radius: 5px;
+}
+.niceadmin .dashboard .news h4 {
+  font-size: 15px;
+  margin-left: 95px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.niceadmin .dashboard .news h4 a {
+  color: #012970;
+  transition: 0.3s;
+}
+.niceadmin .dashboard .news h4 a:hover {
+  color: #4154f1;
+}
+.niceadmin .dashboard .news p {
+  font-size: 14px;
+  color: #777777;
+  margin-left: 95px;
+}
+
+/* Recent Sales */
+.niceadmin .dashboard .recent-sales {
+  font-size: 14px;
+}
+.niceadmin .dashboard .recent-sales .table thead {
+  background: #f6f6fe;
+}
+.niceadmin .dashboard .recent-sales .table thead th {
+  border: 0;
+}
+.niceadmin .dashboard .recent-sales .dataTable-top {
+  padding: 0 0 10px 0;
+}
+.niceadmin .dashboard .recent-sales .dataTable-bottom {
+  padding: 10px 0 0 0;
+}
+
+/* Top Selling */
+.niceadmin .dashboard .top-selling {
+  font-size: 14px;
+}
+.niceadmin .dashboard .top-selling .table thead {
+  background: #f6f6fe;
+}
+.niceadmin .dashboard .top-selling .table thead th {
+  border: 0;
+}
+.niceadmin .dashboard .top-selling .table tbody td {
+  vertical-align: middle;
+}
+.niceadmin .dashboard .top-selling img {
+  border-radius: 5px;
+  max-width: 60px;
+}

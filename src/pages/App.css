@@ -1,0 +1,284 @@
+/**
+* Template Name: NiceAdmin - v2.2.2
+* Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+:root {
+  scroll-behavior: smooth;
+}
+
+.niceadmin {
+  font-family: "Open Sans", sans-serif;
+  background: #f6f9ff;
+  color: #444444;
+}
+
+.niceadmin a {
+  /* color: #4154f1; */
+  text-decoration: none;
+}
+
+.niceadmin a:hover {
+  color: #717ff5;
+  text-decoration: none;
+}
+
+.niceadmin h1, h2, h3, h4, h5, h6 {
+  font-family: "Nunito", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Page Title
+--------------------------------------------------------------*/
+.niceadmin .pagetitle {
+  margin-bottom: 10px;
+}
+.niceadmin .pagetitle h1 {
+  font-size: 24px;
+  margin-bottom: 0;
+  font-weight: 600;
+  color: #012970;
+}
+
+/*--------------------------------------------------------------
+# Override some default Bootstrap stylings
+--------------------------------------------------------------*/
+/* Dropdown menus */
+.niceadmin .dropdown-menu {
+  border-radius: 4px;
+  padding: 10px 0;
+  -webkit-animation-name: dropdown-animate;
+  animation-name: dropdown-animate;
+  -webkit-animation-duration: 0.2s;
+  animation-duration: 0.2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  border: 0;
+  box-shadow: 0 5px 30px 0 rgba(82, 63, 105, 0.2);
+}
+.niceadmin .dropdown-menu .dropdown-header, .dropdown-menu .dropdown-footer {
+  text-align: center;
+  font-size: 15px;
+  padding: 10px 25px;
+}
+.niceadmin .dropdown-menu .dropdown-footer a {
+  color: #444444;
+  text-decoration: underline;
+}
+.niceadmin .dropdown-menu .dropdown-footer a:hover {
+  text-decoration: none;
+}
+.niceadmin .dropdown-menu .dropdown-divider {
+  color: #a5c5fe;
+  margin: 0;
+}
+.niceadmin .dropdown-menu .dropdown-item {
+  font-size: 14px;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+.niceadmin .dropdown-menu .dropdown-item i {
+  margin-right: 10px;
+  font-size: 18px;
+  line-height: 0;
+}
+.niceadmin .dropdown-menu .dropdown-item:hover {
+  background-color: #f6f9ff;
+}
+
+@media (min-width: 768px) {
+  .niceadmin .dropdown-menu-arrow::before {
+    content: "";
+    width: 13px;
+    height: 13px;
+    background: #fff;
+    position: absolute;
+    top: -7px;
+    right: 20px;
+    transform: rotate(45deg);
+    border-top: 1px solid #eaedf1;
+    border-left: 1px solid #eaedf1;
+  }
+}
+@-webkit-keyframes dropdown-animate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0;
+  }
+}
+@keyframes dropdown-animate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0;
+  }
+}
+/* Light Backgrounds */
+.niceadmin .bg-primary-light {
+  background-color: #cfe2ff;
+  border-color: #cfe2ff;
+}
+
+.niceadmin .bg-secondary-light {
+  background-color: #e2e3e5;
+  border-color: #e2e3e5;
+}
+
+.niceadmin .bg-success-light {
+  background-color: #d1e7dd;
+  border-color: #d1e7dd;
+}
+
+.niceadmin .bg-danger-light {
+  background-color: #f8d7da;
+  border-color: #f8d7da;
+}
+
+.niceadmin .bg-warning-light {
+  background-color: #fff3cd;
+  border-color: #fff3cd;
+}
+
+.niceadmin .bg-info-light {
+  background-color: #cff4fc;
+  border-color: #cff4fc;
+}
+
+.niceadmin .bg-dark-light {
+  background-color: #d3d3d4;
+  border-color: #d3d3d4;
+}
+
+/* Card */
+.niceadmin .card {
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+}
+
+.niceadmin .card-header, .card-footer {
+  border-color: #ebeef4;
+  background-color: #fff;
+  color: #798eb3;
+  padding: 15px;
+}
+
+.niceadmin .card-title {
+  padding: 20px 0 15px 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #012970;
+  font-family: "Poppins", sans-serif;
+}
+.niceadmin .card-title span {
+  color: #899bbd;
+  font-size: 14px;
+  font-weight: 400;
+}
+.niceadmin .card-body {
+  padding: 0 20px 20px 20px;
+}
+
+.niceadmin .card-img-overlay {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Alerts */
+.niceadmin .alert-heading {
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+/* Close Button */
+.niceadmin .btn-close {
+  background-size: 25%;
+}
+.niceadmin .btn-close:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+/* Accordion */
+.niceadmin .accordion-item {
+  border: 1px solid #ebeef4;
+}
+
+.niceadmin .accordion-button:focus {
+  outline: 0;
+  box-shadow: none;
+}
+.niceadmin .accordion-button:not(.collapsed) {
+  color: #012970;
+  background-color: #f6f9ff;
+}
+
+.niceadmin .accordion-flush .accordion-button {
+  padding: 15px 0;
+  background: none;
+  border: 0;
+}
+.niceadmin .accordion-flush .accordion-button:not(.collapsed) {
+  box-shadow: none;
+  color: #4154f1;
+}
+.niceadmin .accordion-flush .accordion-body {
+  padding: 0 0 15px 0;
+  color: #3e4f6f;
+  font-size: 15px;
+}
+
+/* Breadcrumbs */
+.niceadmin .breadcrumb {
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  color: #899bbd;
+  font-weight: 600;
+}
+.niceadmin .breadcrumb a {
+  color: #899bbd;
+  transition: 0.3s;
+}
+.niceadmin .breadcrumb a:hover {
+  color: #51678f;
+}
+.niceadmin .breadcrumb .breadcrumb-item::before {
+  color: #899bbd;
+}
+.niceadmin .breadcrumb .active {
+  color: #51678f;
+  font-weight: 600;
+}
+
+/* Bordered Tabs */
+.niceadmin .nav-tabs-bordered {
+  border-bottom: 2px solid #ebeef4;
+}
+.niceadmin .nav-tabs-bordered .nav-link {
+  margin-bottom: -2px;
+  border: none;
+  color: #2c384e;
+}
+.niceadmin .nav-tabs-bordered .nav-link:hover, .nav-tabs-bordered .nav-link:focus {
+  color: #4154f1;
+}
+.niceadmin .nav-tabs-bordered .nav-link.active {
+  background-color: #fff;
+  color: #4154f1;
+  border-bottom: 2px solid #4154f1;
+}
